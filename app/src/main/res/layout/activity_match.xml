@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkGrey">
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="322dp"
+        android:layout_height="220dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="44dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/intakeNotesTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/yellow"
+            android:gravity="center"
+            android:text="Can intake notes from:"
+            android:textColor="@color/white"
+            android:textSize="36sp" />
+
+        <RadioButton
+            android:id="@+id/sourceRadioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/grey"
+            android:buttonTint="@color/yellow"
+            android:text="Only Source"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+
+        <RadioButton
+            android:id="@+id/floorRadioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/grey"
+            android:buttonTint="@color/yellow"
+            android:text="Only Floor"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+
+        <RadioButton
+            android:id="@+id/bothRadioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/grey"
+            android:buttonTint="@color/yellow"
+            android:text="Both"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/mainNextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/yellow"
+        android:onClick="toAuto"
+        android:text="Next"
+        android:textColor="@color/white"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toBottomOf="@+id/radioGroup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/radioGroup"
+        app:layout_constraintTop_toTopOf="@+id/radioGroup" />
+</androidx.constraintlayout.widget.ConstraintLayout>

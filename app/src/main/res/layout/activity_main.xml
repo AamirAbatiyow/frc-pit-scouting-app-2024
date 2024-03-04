@@ -101,6 +101,86 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/pitNumberEditText" />
 
+    <EditText
+        android:id="@+id/robotWeightEditText"
+        android:layout_width="550dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:background="@color/grey"
+        android:ems="10"
+        android:hint="How much does your robot weigh?"
+        android:inputType="number"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/robotDimensionsEditText" />
+
+    <EditText
+        android:id="@+id/driveTrainEditText"
+        android:layout_width="550dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:background="@color/grey"
+        android:ems="10"
+        android:hint="What type of drivetrain do you use?"
+        android:inputType="number"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/robotWeightEditText" />
+
+    <EditText
+        android:id="@+id/codingLanguageEditText"
+        android:layout_width="550dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:background="@color/grey"
+        android:ems="10"
+        android:hint="What coding language do you use?"
+        android:inputType="number"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/driveTrainEditText" />
+
+    <EditText
+        android:id="@+id/visionTrackingEditText"
+        android:layout_width="550dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:background="@color/grey"
+        android:ems="10"
+        android:hint="Do you have any vision tracking?"
+        android:inputType="number"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/codingLanguageEditText" />
+
+    <EditText
+        android:id="@+id/autonomousEditText"
+        android:layout_width="550dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:background="@color/grey"
+        android:ems="10"
+        android:hint="What autos do you have?"
+        android:inputType="number"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/visionTrackingEditText" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 
