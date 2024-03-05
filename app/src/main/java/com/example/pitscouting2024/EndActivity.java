@@ -11,6 +11,7 @@ public class EndActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_end);
+        setPrevious();
     }
     public void toAfter(View view){
         Intent next = new Intent(this, AfterActivity.class);
@@ -22,6 +23,10 @@ public class EndActivity extends AppCompatActivity {
         Intent next = new Intent(this, MatchActivity.class);
         startActivity(next);
         saveData();
+    }
+
+    public void setPrevious(){
+
     }
 
     public void saveData() {

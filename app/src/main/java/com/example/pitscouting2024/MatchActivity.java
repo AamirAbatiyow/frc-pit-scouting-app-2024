@@ -11,6 +11,7 @@ public class MatchActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_match);
+        setPrevious();
     }
     public void toEnd(View view){
         Intent next = new Intent(this, EndActivity.class);
@@ -22,6 +23,10 @@ public class MatchActivity extends AppCompatActivity {
         Intent next = new Intent(this, MainActivity.class);
         startActivity(next);
         saveData();
+    }
+
+    public void setPrevious(){
+
     }
 
     public void saveData() {
