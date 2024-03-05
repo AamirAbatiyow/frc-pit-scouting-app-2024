@@ -22,7 +22,7 @@ public class AfterActivity extends AppCompatActivity {
     public void toMain(View view){
         Intent next = new Intent(this, MainActivity.class);
         startActivity(next);
-        //RecordsActivity.Info.makeFile();
+        RecordsActivity.Info.makeFile();
         RecordsActivity.Info.clear();
     }
 
