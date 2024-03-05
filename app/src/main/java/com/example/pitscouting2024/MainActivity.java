@@ -2,6 +2,7 @@ package com.example.pitscouting2024;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.media.MediaScannerConnection;
 import android.os.Bundle;
 import android.os.Environment;
@@ -20,5 +21,14 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+    }
+    public void toMatch(View view){
+        Intent next = new Intent(this, MatchActivity.class);
+        startActivity(next);
+        saveData();
+    }
+
+    public void saveData() {
+
     }
 }

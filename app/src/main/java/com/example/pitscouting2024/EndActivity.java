@@ -1,6 +1,8 @@
 package com.example.pitscouting2024;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -9,5 +11,20 @@ public class EndActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_end);
+    }
+    public void toAfter(View view){
+        Intent next = new Intent(this, AfterActivity.class);
+        startActivity(next);
+        saveData();
+    }
+
+    public void backMatch(View view){
+        Intent next = new Intent(this, MatchActivity.class);
+        startActivity(next);
+        saveData();
+    }
+
+    public void saveData() {
+
     }
 }
