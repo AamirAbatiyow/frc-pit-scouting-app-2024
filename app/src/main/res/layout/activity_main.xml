@@ -7,12 +7,27 @@
     android:background="@color/darkGrey"
     tools:context=".MainActivity" >
 
+    <TextView
+        android:id="@+id/pitScoutingTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:background="@color/yellow"
+        android:gravity="center"
+        android:text="Pit Scouting"
+        android:textColor="@color/white"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <EditText
         android:id="@+id/scoutNameEditText"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="70dp"
         android:ems="10"
         android:hint="Scout Name"
         android:textColorHint="@color/white"
@@ -21,14 +36,14 @@
         android:inputType="text"
         android:textSize="34sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="@+id/pitScoutingTextView" />
 
     <EditText
         android:id="@+id/teamNumberEditText"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="25dp"
         android:background="@color/grey"
         android:ems="10"
         android:hint="Team Number"
@@ -44,7 +59,7 @@
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="25dp"
         android:background="@color/grey"
         android:ems="10"
         android:hint="Team Name"
@@ -59,7 +74,7 @@
         android:id="@+id/pitNumberEditText"
         android:layout_width="550dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="25dp"
         android:background="@color/grey"
         android:ems="10"
         android:hint="Pit Number"
@@ -70,6 +85,21 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/teamNameEditText" />
+
+    <TextView
+        android:id="@+id/robotInfoTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:background="@color/yellow"
+        android:gravity="center"
+        android:text="Robot Info"
+        android:textColor="@color/white"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/pitNumberEditText" />
 
     <Button
         android:id="@+id/mainNextButton"
@@ -89,7 +119,7 @@
         android:id="@+id/robotDimensionsEditText"
         android:layout_width="550dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="25dp"
         android:background="@color/grey"
         android:ems="10"
         android:hint="What are your robot's dimensions?"
@@ -99,13 +129,13 @@
         android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/pitNumberEditText" />
+        app:layout_constraintTop_toBottomOf="@+id/robotInfoTextView" />
 
     <EditText
         android:id="@+id/robotWeightEditText"
         android:layout_width="550dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="25dp"
         android:background="@color/grey"
         android:ems="10"
         android:hint="How much does your robot weigh?"
@@ -121,7 +151,7 @@
         android:id="@+id/driveTrainEditText"
         android:layout_width="550dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="25dp"
         android:background="@color/grey"
         android:ems="10"
         android:hint="What type of drivetrain do you use?"
@@ -137,7 +167,7 @@
         android:id="@+id/codingLanguageEditText"
         android:layout_width="550dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="25dp"
         android:background="@color/grey"
         android:ems="10"
         android:hint="What coding language do you use?"
@@ -153,7 +183,7 @@
         android:id="@+id/visionTrackingEditText"
         android:layout_width="550dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="25dp"
         android:background="@color/grey"
         android:ems="10"
         android:hint="Do you have any vision tracking?"
@@ -169,7 +199,7 @@
         android:id="@+id/autonomousEditText"
         android:layout_width="550dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="25dp"
         android:background="@color/grey"
         android:ems="10"
         android:hint="What autos do you have?"

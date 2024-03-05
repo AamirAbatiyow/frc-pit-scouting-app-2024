@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
         teamName = findViewById(R.id.teamNameEditText);
         teamNumber = findViewById(R.id.teamNumberEditText);
         pitNumber = findViewById(R.id.pitNumberEditText);
-        dimensions = findViewById(R.id.pitNumberEditText);
+        dimensions = findViewById(R.id.robotDimensionsEditText);
         weight = findViewById(R.id.robotWeightEditText);
         drivetrain = findViewById(R.id.driveTrainEditText);
         autonomous = findViewById(R.id.autonomousEditText);

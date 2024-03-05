@@ -14,8 +14,8 @@ public class RecordsActivity {
         public static String scoutName, teamName, teamNumber, pitNumber, dimensions, weight, drivetrain, autonomous, codingLanguage, visionTracking, shootingMechanism, shootingLocation, intakeFrom, intakeType, climbTime, climbPosition, driveTeam, bestAt, picture, bumper, gp, comments  = "";
         public static boolean ampScoring, speakerScoring, trapScoring, climb, harmonize = false;
         public static String createJSON() {
-            String json = String.format("\t%s",scoutName);
-            json += String.format("\t%s",teamNumber);
+            String json = String.format("\n%s",scoutName);
+            json += String.format("\t%s", teamNumber);
             json += String.format("\t%s",teamName);
             json += String.format("\t%s",pitNumber);
             json += String.format("\t%s",dimensions);
@@ -47,43 +47,6 @@ public class RecordsActivity {
         public static void clear(){
             scoutName= ""; teamName= ""; teamNumber= ""; pitNumber= ""; dimensions= ""; weight= ""; drivetrain= ""; autonomous= ""; codingLanguage= ""; visionTracking= ""; shootingMechanism= ""; shootingLocation= ""; intakeFrom= ""; intakeType= ""; climbTime= ""; climbPosition= ""; driveTeam= ""; bestAt= ""; picture= ""; bumper= ""; gp= ""; comments= "";
             ampScoring= false; speakerScoring= false; trapScoring= false; climb= false; harmonize = false;
-        }
-
-        public static void makeFile() { // made this static 3/4/2024
-            // Create a path where we will place our private file on external storage
-            String name = teamNumber + ".txt";
-            File file = new File("/storage/self/primary/Android/data", name); //Records.Info.position.replaceAll("\\s","").toLowerCase()
-
-            if (!isExternalStorageWritable())
-                return;
-            try {
-                FileOutputStream os = new FileOutputStream(file, true);
-                //PrintWriter pw = new PrintWriter(os);
-                OutputStreamWriter osw = new OutputStreamWriter(os);
-                String json = createJSON();
-                osw.write("\n " + json);
-                osw.flush();
-                //pw.println(json);
-                //pw.flush();
-                //pw.close();
-                os.close();
-                //MediaScannerConnection.scanFile(this, new String[]{file.getAbsolutePath()}, null, null); 3/4/2024
-
-
-            } catch (IOException e) {
-                // Unable to create file, likely because external storage is
-                // not currently mounted.
-                Log.w("ExternalStorage", "Error writing " + file, e);
-            }
-
-        }
-
-        public static boolean isExternalStorageWritable() { // made this static 3/4/2024
-            String state = Environment.getExternalStorageState();
-            if (Environment.MEDIA_MOUNTED.equals(state)) {
-                return true;
-            }
-            return false;
         }
     }
 }
