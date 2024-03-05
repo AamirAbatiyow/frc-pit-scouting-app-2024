@@ -7,13 +7,13 @@
     android:background="@color/darkGrey">
 
     <Button
-        android:id="@+id/mainNextButton"
+        android:id="@+id/endNextButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
         android:layout_marginEnd="50dp"
         android:backgroundTint="@color/yellow"
-        android:onClick="toAuto"
+        android:onClick="toAfter"
         android:text="Next"
         android:textColor="@color/white"
         android:textSize="48sp"
@@ -21,13 +21,13 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/teleBackButton"
+        android:id="@+id/endBackButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="50dp"
         android:layout_marginTop="50dp"
         android:backgroundTint="@color/yellow"
-        android:onClick="backAuto"
+        android:onClick="backMatch"
         android:text="Back"
         android:textColor="@color/white"
         android:textSize="48sp"
