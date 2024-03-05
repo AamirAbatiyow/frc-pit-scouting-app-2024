@@ -22,7 +22,8 @@ public class AfterActivity extends AppCompatActivity {
     public void toMain(View view){
         Intent next = new Intent(this, MainActivity.class);
         startActivity(next);
-        saveData();
+        //RecordsActivity.Info.makeFile();
+        RecordsActivity.Info.clear();
     }
 
     public void backEnd(View view){
