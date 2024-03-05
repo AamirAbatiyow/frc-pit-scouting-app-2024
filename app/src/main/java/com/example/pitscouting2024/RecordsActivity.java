@@ -11,8 +11,8 @@ import java.io.OutputStreamWriter;
 
 public class RecordsActivity {
     public static class Info {
-        public static String scoutName, teamName, teamNumber, pitNumber, dimensions, weight, drivetrain, autonomous, codingLanguage, visionTracking = "";
-
+        public static String scoutName, teamName, teamNumber, pitNumber, dimensions, weight, drivetrain, autonomous, codingLanguage, visionTracking, shootingMechanism, shootingLocation, intakeFrom, intakeType, climbTime, climbPosition, driveTeam, bestAt, picture, bumper, gp, comments  = "";
+        public static boolean ampScoring, speakerScoring, trapScoring, climb, harmonize = false;
         public static String CreateJSON() {
             String json = String.format("\t%s",scoutName);
             json += String.format("\t%s",teamNumber);
