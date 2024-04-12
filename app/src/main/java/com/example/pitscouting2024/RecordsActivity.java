@@ -11,13 +11,12 @@ import java.io.OutputStreamWriter;
 
 public class RecordsActivity {
     public static class Info {
-        public static String scoutName, teamName, teamNumber, pitNumber, dimensions, weight, drivetrain, autonomous, codingLanguage, visionTracking, shootingMechanism, shootingLocation, intakeFrom, intakeType, climbTime, climbPosition, driveTeam, bestAt, picture, bumper, gp, comments  = "";
+        public static String scoutName, teamName, teamNumber, dimensions, weight, drivetrain, autonomous, codingLanguage, visionTracking, shootingMechanism, shootingLocation, intakeFrom, intakeType, climbTime, climbPosition, driveTeam, bestAt, picture, bumper, gp, comments  = "";
         public static boolean ampScoring, speakerScoring, trapScoring, climb, harmonize = false;
         public static String createJSON() {
             String json = String.format("\n%s",scoutName);
             json += String.format("\t%s", teamNumber);
             json += String.format("\t%s",teamName);
-            json += String.format("\t%s",pitNumber);
             json += String.format("\t%s",dimensions);
             json += String.format("\t%s",weight);
             json += String.format("\t%s",drivetrain);
@@ -45,7 +44,7 @@ public class RecordsActivity {
         }
 
         public static void clear(){
-            scoutName= ""; teamName= ""; teamNumber= ""; pitNumber= ""; dimensions= ""; weight= ""; drivetrain= ""; autonomous= ""; codingLanguage= ""; visionTracking= ""; shootingMechanism= ""; shootingLocation= ""; intakeFrom= ""; intakeType= ""; climbTime= ""; climbPosition= ""; driveTeam= ""; bestAt= ""; picture= ""; bumper= ""; gp= ""; comments= "";
+            teamName= ""; teamNumber= ""; dimensions= ""; weight= ""; drivetrain= ""; autonomous= ""; codingLanguage= ""; visionTracking= ""; shootingMechanism= ""; shootingLocation= ""; intakeFrom= ""; intakeType= ""; climbTime= ""; climbPosition= ""; driveTeam= ""; bestAt= ""; picture= ""; bumper= ""; gp= ""; comments= "";
             ampScoring= false; speakerScoring= false; trapScoring= false; climb= false; harmonize = false;
         }
     }
