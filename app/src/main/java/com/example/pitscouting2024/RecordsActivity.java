@@ -16,7 +16,7 @@ public class RecordsActivity {
         public static String createJSON() {
             String json = String.format("\n%s",scoutName);
             json += String.format("\t%s", teamNumber);
-            json += String.format("\t%s",teamName);
+//            json += String.format("\t%s",teamName);
             json += String.format("\t%s",dimensions);
             json += String.format("\t%s",weight);
             json += String.format("\t%s",drivetrain);
